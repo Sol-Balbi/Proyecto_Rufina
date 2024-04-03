@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUFINA | Joyeria & Accesorios</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+    <header>
+        <!-- Menu con apartados desplegables que redireccionan al usuario al producto seleccionado -->
+        <div id="menu">
+            <div class="desplegable">
+                <button class="boton">JOYAS</button>
+                <div class="contenido_desplegable">
+                    <hr>
+                    <a href="views/anillos.html">- ANILLOS</a>
+                    <a href="views/collar.html">- COLLARES</a>
+                    <a href="views/pendientes.html">- PENDIENTES</a>
+                    <a href="views/pulseras.html">- PULSERAS</a>
+                    <hr>
+                </div>
+            </div>
+            <div class="desplegable">
+                <button class="boton">ACCESORIOS</button>
+                <div class="contenido_desplegable">
+                    <hr>
+                    <a href="views/carteras.html">- CARTERAS</a>
+                    <a href="views/cinturones.html">- CINTURONES</a>
+                    <a href="views/pañuelo.html">- PAÑUELOS</a>
+                    <a href="views/relojes.html">- RELOJES</a>
+                    <hr>
+                </div>
+            </div>
+            <div class="desplegable">
+                <button class="boton">PRESUPUESTO</button>
+                <div class="contenido_desplegable">
+                    <hr>
+                    <a href="views/presupuesto.html">- COMUNICATE CONMIGO</a>
+                    <a href="views/contacto.html">- ENCUENTRANOS AQUI!</a>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </header>
+    <br>
+    <main>
+        <!--Primera seccion: Logo de la empresa -->
+            <div id="margenInicio">
+                <img  id="foto_portada" src="imagen/inicio/1.png" alt="logo de Rufina">
+            </div>
+        <!--Segunda seccion: Imagenes de promoción -->
+        <section>
+            <div>
+                <img id="portada1" src="imagen/inicio/encabezado2.jpg" alt="">
+                <img id="portada2" src="imagen/inicio/encabezado1.jpg" alt="">
+                <img id="portada3" src="imagen/inicio/encabezado3.jpg" alt="">
+            </div>
+        </section>
+        <!--Tercera seccion: Carta de presentación de la empresa -->
+        <section>
+            <div id="frace">
+                <h3>"UN ACCESORIO ES ESO TAN PEQUEÑO QUE TE HACE SENTIR ÚNICA"</h3>
+            </div>
+            <div id="emprender">
+                <p>
+                    A través de mi experiencia en joyería de estos últimos cinco años.
+                    Así como el hecho <br> de poder tener una relación cercana con mis clientes me permite ver las necesidades, <br> preferencias y gustos de las personas de diferentes edades y estilos. <br> <br>
+                    Es una marca Uruguaya inspirada en el arte y diseño. Quiero empoderar a la mujer contemporánea que busca realzar <br> su feminidad y fortaleza. 
+                    Cada una de las piezas es delicadamente hecha a mano y es personalizada. <br> <br>
+                    La joyería nace impulsada y motivada por la sensibilidad y la creatividad. 
+                    Busca conjugar arte y <br> estilo para las mujeres modernas y exitosas que no conocen límites.
+                    Cada una de las colecciones <br> se encuentran inspiradas en alguna musa; mujeres contemporáneas, modernas, empoderadas e independientes.
+                </p>
+            </div>
+        </section>
+        <!--Cuarta sección: Carrusel de imagenes que enlazan al usuario hacia otra parte de la pagína -->
+        <section>
+            <div>
+            <h2 id="aqui">ENCUENTRA AQUI LO QUE TENEMOS PARA TI...</h2>
+            </div>
+            <div id="carrusel">
+                <div>
+                    <a href="views/anillos.html"><img class="imagen" src="imagen/inicio/anillo_portada.jpg" alt=""></a>
+                </div>
+                <div>
+                    <a href="views/carteras.html"><img class="imagen" src="imagen/inicio/cartera_portada.jpg" alt=""></a>
+                </div>
+                <div>
+                    <a href="views/collar.html"><img class="imagen" src="imagen/inicio/collar_portada.jpg" alt=""></a>
+                </div>
+                <div>
+                    <a href="views/pulseras.html"><img class="imagen" src="imagen/inicio/pulsera_portada.jpg" alt=""></a>
+                </div>
+                <div>
+                    <a href="views/relojes.html"><img class="imagen" src="imagen/inicio/reloj_portada.jpg" alt=""></a>
+                </div> 
+                <div>
+                    <a href="views/pañuelo.html"><img class="imagen" src="imagen/pañuelo/pañuelo5.jpg" alt=""></a>
+                </div>
+            </div>
+        </section>
+        <!-- Titulo animado -->
+        <div id="contenedor_tituloBox">
+            <h2 id="tituloBox">¡Descubre nuestras ofertas!</h2>
+        </div>
+        <!--Quinta seccion: Carga de archivos externos (JSON) -->
+        <section class="contenedor_box">
+            <div>
+                <input class="botonJson" type="button" value="Tienda Larios" onclick="CargarLarios()" >
+                <div id="box"></div>
+            </div>
+            <div>
+                <input class="botonJson" type="button" value="Tienda Fuengirola" onclick="CargarFuengirola()" >
+                <div id="box1"></div>
+            </div>
+            <div>
+                <input class="botonJson" type="button" value="Tienda Benalmadena" onclick="CargarBenalmadena()" >
+                <div id="box2"></div>
+            </div>
+            <div>
+                <input class="botonJson" type="button" value="Tienda Marbella" onclick="CargarMarbella()" >
+                <div id="box3"></div>
+            </div>
+
+        </section>
+    </main>
+    <!--Pie de pagina, se encuentran Redes Sociales, apartado legal, horarios y politicas -->
+    <footer>
+        <div class="cajita1">
+            <div class="caja_legal"> 
+                <p><b>Nuestra principal tienda la encontras</b> : <br>Fuengirola, Hernan Cortes 33 </p> <br>
+                <p><b>Atencion al Cliente </b><br> L-V: 10:00h- 14:00h <br> 613089345</p>  
+            </div>
+           <div class="redes">
+                <p><b>Redes Sociales</b></p>
+                <a href="https://www.google.com/intl/es/gmail/about/"><img class="logo" src="imagen/logos/correo.png" alt="logo correo"></a>
+                <a href="https://www.instagram.com/"><img class="logo" src="imagen/logos/instagram.png" alt="logo instagram"></a>
+                <a href="https://www.whatsapp.com/?lang=es_LA"><img class="logo" src="imagen/logos/whatsapp.png" alt="logo contacto"></a> 
+            </div> 
+            <div class="aviso">
+                <p><b>Políticas</b></p>
+                <!--este enlace es un ejempo ya que en la propesta no especifica que aviso legal tenemos que usar-->
+                <a href="https://www.aepd.es/es/politica-de-privacidad-y-aviso-legal">Aviso Legal</a> 
+                <p>© Rufina 2023</p>
+            </div>
+        </div>
+    </footer>
+    <!--libreria jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/java.js"></script>
+</body>
+</html>

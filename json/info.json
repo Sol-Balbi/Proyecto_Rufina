@@ -1,0 +1,41 @@
+{
+
+ "Larios":[
+        {"tiendas":"Rufina Larios",
+        "provincia":"Malaga",
+        "direccion":"CC - Larios",
+        "descuentos": "2x1 en Joyas"}
+
+    ],
+
+ "Fuengirola":[
+        {"tiendas":"Rufina Fuengirola",
+        "provincia":"Malaga",
+        "direccion":"CC - Miramar",
+        "descuentos": "50% en Accesorios"}
+    ],
+       
+       
+       
+ "Benalmadena":[
+        {"tiendas":"Rufina Benalmadena",
+        "provincia":"Malaga",
+        "direccion":"CC - Plaza Mayor",
+        "descuentos": "2x1 en Joyas"}
+    ],
+    
+ "Marbella":[
+        {"tiendas":"Rufina Marbella",
+        "provincia":"Malaga",
+        "direccion":"CC - La Cañada",
+        "descuentos": "50% en Accesorios"}
+    ]
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUFINA | Joyeria & Accesorios</title>
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+</head>
+<body>
+    <header>
+        <div id="menu">
+            <div>
+                <a href="../index.html"><img class="boton_inicio" src="../imagen/logos/Rufina(1).png" alt=""></a>
+            </div>
+            <div class="desplegable">
+                <button class="boton">JOYAS</button>
+                <div class="contenido_desplegable">
+                    <hr>
+                    <a href="anillos.html"> - ANILLOS</a>
+                    <a href="collar.html"> - COLLARES</a>
+                    <a href="pendientes.html">- PENDIENTES</a>
+                    <a href="pulseras.html">- PULSERAS</a>
+                    <hr>
+                </div>
+            </div>
+            <div class="desplegable">
+                <button class="boton">ACCESORIOS</button>
+                <div class="contenido_desplegable">
+                    <hr>
+                    <a href="carteras.html">- CARTERAS</a>
+                    <a href="cinturones.html">- CINTURONES</a>
+                    <a href="pañuelo.html">- PAÑUELOS</a>
+                    <a href="relojes.html">- RELOJES</a>
+                    <hr>
+                </div>
+            </div>
+            <div class="desplegable">
+                <button class="boton">PRESUPUESTO</button>
+                <div class="contenido_desplegable">
+                    <hr>
+                    <a href="presupuesto.html">- COMUNICATE CONMIGO</a>
+                    <a href="contacto.html">- ENCUENTRANOS AQUI!</a>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!--Un mapa dinamico -->
+        <h2 id="titulo_ubicacion">¡Nuestra principal tienda!</h2>
+        <div id="ubicacion"></div>
+        <!-- Información de la tienda -->
+        <div id="contactos">
+            <div class="contenedor_contacto">
+                <div id="caja_contacto1">
+                    <img class="imagenes_contacto" src="../imagen/logos/ubicacion.png" alt="ubicacion">
+                    <p>-Herrnan Cortes 33, Fuengirola Málaga</p>
+                </div>
+            </div>
+            <div class="contenedor_contacto">
+                <div id="caja_contacto2">
+                    <img class="imagenes_contacto" src="../imagen/logos/correo.png" alt="correo">
+                    <p>solbalbi8@gmail.com</p>
+                </div>
+            </div>
+            <div class="contenedor_contacto">
+                <div id="caja_contacto3">
+                    <img class="imagenes_contacto" src="../imagen/logos/telefono-movil.png" alt="telefono">
+                    <p>613089345</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="cajita1">
+            <div class="caja_legal"> 
+                <p><b>Nuestra principal tienda la encontras</b> : <br>Fuengirola, Hernan Cortes 33 </p> <br>
+                <p><b>Atencion al Cliente </b><br> L-V: 10:00h- 14:00h <br> 613089345</p>  
+            </div>
+           <div class="redes">
+                <p><b>Redes Sociales</b></p>
+                <a href="https://www.google.com/intl/es/gmail/about/"><img class="logo" src="../imagen/logos/correo.png" alt="logo correo"></a>
+                <a href="https://www.instagram.com/"><img class="logo" src="../imagen/logos/instagram.png" alt="logo instagram"></a>
+                <a href="https://www.whatsapp.com/?lang=es_LA"><img class="logo" src="../imagen/logos/whatsapp.png" alt="logo contacto"></a> 
+            </div> 
+            <div class="aviso">
+                <p><b>Políticas</b></p>
+                <a href="https://www.aepd.es/es/politica-de-privacidad-y-aviso-legal">Aviso Legal</a> <!--este enlace es un ejempo ya que en la propesta no especifica que aviso legal tenemos que usar-->
+                <p>© Rufina 2023</p>
+            </div>
+        </div>
+    </footer>
+<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+<script src="../js/mapa.js" ></script>
+</body>
+</html>

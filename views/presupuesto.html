@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUFINA | Joyeria & Accesorios</title>
+    <link rel="stylesheet" href="../estilos/estilos.css">
+   
+</head>
+<body>
+    <header>
+        <div id="menu">
+            <div>
+                <a href="../index.html"><img class="boton_inicio" src="../imagen/logos/Rufina(1).png" alt=""></a>
+            </div>
+            <div class="desplegable">
+                <button class="boton">JOYAS</button>
+                <div class="contenido_desplegable">
+                    <hr>
+                    <a href="anillos.html"> - ANILLOS</a>
+                    <a href="collar.html"> - COLLARES</a>
+                    <a href="pendientes.html">- PENDIENTES</a>
+                    <a href="pulseras.html">- PULSERAS</a>
+                    <hr>
+                </div>
+            </div>
+            <div class="desplegable">
+                <button class="boton">ACCESORIOS</button>
+                <div class="contenido_desplegable">
+                    <hr>
+                    <a href="carteras.html">- CARTERAS</a>
+                    <a href="cinturones.html">- CINTURONES</a>
+                    <a href="pañuelo.html">- PAÑUELOS</a>
+                    <a href="relojes.html">- RELOJES</a>
+                    <hr>
+                </div>
+            </div>
+            <div class="desplegable">
+                <button class="boton">PRESUPUESTO</button>
+                <div class="contenido_desplegable">
+                    <hr>
+                    <a href="presupuesto.html">- COMUNICATE CONMIGO</a>
+                    <a href="contacto.html">- ENCUENTRANOS AQUI!</a>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="caja_contacto">
+            <form id="formulario1" name="formulario1" method="post" target="_blank"  action="cualquier.php">
+                <h2 class="titulo_for">Contacta con nosotros!</h2>
+                <h4 id="cajas3">Con este formulario nos pondremos en contacto contigo, <br> para saber que es lo que te gusta y poder enviartelo a tu hogar.</h4>
+                    <div class="cajas1">
+                        <label for="nombre" >Nombre:</label>
+                        <input id="nombre" type="text" placeholder="Escriba su nombre" autofocus>*
+                        <small>Error mensaje</small>
+                    </div>
+                    <div class="cajas1">
+                        <label for="correo" >Correo Electrónico:</label>
+                        <input id="correo" type="text" placeholder="Escriba su correo electrónico" >*
+                        <small>Error mensaje</small>                 
+                    </div>
+                    <div class="cajas1">
+                        <label for="telefono">Telefono:</label>
+                        <input id="telefono" type="text" placeholder="Escriba su correo" >*
+                        <small>Error mensaje</small>                
+                    </div>
+                    <div class="cajas1">
+                        <label for="direccion">Dirección:</label>
+                        <input id="direccion" type="text" placeholder="Escriba su dirección">*
+                        <small>Error mensaje</small>                 
+                    </div>
+                <hr>
+                <h2 class="titulo_for">Tu presupuesto de JOYAS!</h2>
+                <div class="cajas1">
+                    <label>Tiempo de joyas:</label>
+                    <select id="base">
+                        <option value="">Escoge tu joya</option>
+                        <option value="100">Anillos €100</option>
+                        <option value="2000">Collares €2000</option>
+                        <option value="1500">Pendientes €1500</option>
+                        <option value="2500">Pulseras €2500</option>
+                    </select>
+                </div>
+                <div class="cajas1">
+                    <label for="articulo" >Nombre del artículo:</label>
+                    <input id="articulo" type="text" value placeholder="Nombre de la joya" >
+                </div>
+                <div class="cajas1">
+                    <label for="plazo" >Plazo en meses :</label>
+                    <input id="plazo" type="number" min="0" max="3" value ="" >
+                </div>
+                <div class="cajas1">
+                    <div id="extra">
+                        <label >Servicios de envios:</label> <br>
+                        <label for="envioJ">Correo</label>
+                        <input type="checkbox" value="400" id="envioJ">
+
+                        <label for="mrw">MRW</label>
+                        <input type="checkbox" value="500" id="mrw">
+
+                        <label for="dhl">DHL</label>
+                        <input type="checkbox" value="200" id="dhl">
+
+                        <label for="seur">SEUR</label>
+                        <input type="checkbox" value="150" id="seur">
+                    </div>
+                </div>
+                <div class="cajas1">
+                    <label for="total">Presupuesto Estimado:</label>
+                    <input type="text" id="total">
+                </div>
+                <hr>
+                <h2 class="titulo_for">Tu presupuesto de Accesorios!</h2>
+                <div class="cajas1">
+                    <label>Tiempo de accesorios:</label>
+                    <select id="baseA">
+                        <option value="">Escoge tu accesorio</option>
+                        <option value="1000">Carteras €1000</option>
+                        <option value="100">Cinturones €100</option>
+                        <option value="200">Pañuelos €200</option>
+                        <option value="2000">Relojes €2000</option>
+                    </select>
+                </div>
+                <div class="cajas1">
+                    <label for="accesoriosA" >Nombre del artículo:</label>
+                    <input id="accesoriosA" type="text" placeholder="Nombre del accesorio" >
+                </div>
+                <div class="cajas1">
+                    <label for="plazoA" >Plazo en meses :</label>
+                    <input id="plazoA" type="number" min="0" max="3" value ="" >
+                </div>
+                <div class="cajas1">
+                    <div id="extrasA">
+                        <label>Servicios de envios:</label> <br>
+                        <label for="correoA">Correo</label>
+                        <input type="checkbox" value="400" id="correoA">
+
+                        <label for="mrwA">MRW</label>
+                        <input type="checkbox" value="500" id="mrwA">
+
+                        <label for="dhlA">DHL</label>
+                        <input type="checkbox" value="200" id="dhlA">
+
+                        <label for="seurA">SEUR</label>
+                        <input type="checkbox" value="150" id="seurA">
+                    </div>
+                </div>
+                <div class="cajas1">
+                    <label for="totalA">Presupuesto Estimado:</label>
+                    <input type="text" id="totalA">
+                </div>
+                <br>
+                <div class="cajas1">
+                    <label for="privacidad">He leido la política de privaciodad</label>
+                    <input type="checkbox" id="privacidad" name="privacidad" required>
+                </div>
+                <div id="cajas2">
+                    <input type="submit" id="enviar" value="ENVIAR">
+                    <input type="reset" id="borrar" value="BORRAR">
+                </div>
+                <p>(*) LOS CAMPOS CON ESTE ICONO SON OBLIGATORIOS </p>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="cajita1">
+            <div class="caja_legal"> 
+                <p><b>Nuestra principal tienda la encontras</b> : <br>Fuengirola, Hernan Cortes 33 </p> <br>
+                <p><b>Atencion al Cliente </b><br> L-V: 10:00h- 14:00h <br> 613089345</p>  
+            </div>
+           <div class="redes">
+                <p><b>Redes Sociales</b></p>
+                <a href="https://www.google.com/intl/es/gmail/about/"><img class="logo" src="../imagen/logos/correo.png" alt="logo correo"></a>
+                <a href="https://www.instagram.com/"><img class="logo" src="../imagen/logos/instagram.png" alt="logo instagram"></a>
+                <a href="https://www.whatsapp.com/?lang=es_LA"><img class="logo" src="../imagen/logos/whatsapp.png" alt="logo contacto"></a> 
+            </div> 
+            <div class="aviso">
+                <p><b>Políticas</b></p>
+                <a href="https://www.aepd.es/es/politica-de-privacidad-y-aviso-legal">Aviso Legal</a> <!--este enlace es un ejempo ya que en la propesta no especifica que aviso legal tenemos que usar-->
+                <p>© Rufina 2023</p>
+            </div>
+        </div>
+    </footer>
+<script src="../js/java.js"></script> 
+</body>
+</html>
